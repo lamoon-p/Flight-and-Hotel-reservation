@@ -1,5 +1,3 @@
-import javax.swing.text.DateFormatter;
-import java.text.DateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -63,6 +61,7 @@ public class App {
         for (HotelReserve hotelReserve : hotelReserves) {
             if (hotelReserve.getBookingNumber() == bookingNumber) {
                 hotelReserves.remove(hotelReserve);
+                System.out.println("Booking Number: " + bookingNumber + "\nHotel reservation cancelled!");
             }
         }
     }
