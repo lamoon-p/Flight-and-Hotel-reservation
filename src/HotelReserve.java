@@ -2,7 +2,7 @@ public class HotelReserve {
 
     private int hotelID;
     private int pax;
-    private int bookingNumber;
+    private long bookingNumber;
 
     public int getHotelID() {
         return hotelID;
@@ -20,11 +20,11 @@ public class HotelReserve {
         this.pax = pax;
     }
 
-    public int getBookingNumber() {
+    public long getBookingNumber() {
         return bookingNumber;
     }
 
-    public void setBookingNumber(int bookingNumber) {
+    public void setBookingNumber(long bookingNumber) {
         this.bookingNumber = bookingNumber;
     }
 }

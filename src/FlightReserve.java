@@ -2,7 +2,7 @@ public class FlightReserve {
 
     private int flightNumber;
     private int pax;
-    private int bookingNumber;
+    private long bookingNumber;
 
     public int getFlightNumber() {
         return flightNumber;
@@ -20,11 +20,20 @@ public class FlightReserve {
         this.pax = pax;
     }
 
-    public int getBookingNumber() {
+    public long getBookingNumber() {
         return bookingNumber;
     }
 
-    public void setBookingNumber(int bookingNumber) {
+    public void setBookingNumber(long bookingNumber) {
         this.bookingNumber = bookingNumber;
+    }
+
+    @Override
+    public String toString() {
+        return "FlightReserve{" +
+                "flightNumber=" + flightNumber +
+                ", pax=" + pax +
+                ", bookingNumber=" + bookingNumber +
+                '}';
     }
 }

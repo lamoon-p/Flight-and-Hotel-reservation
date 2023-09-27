@@ -1,14 +1,14 @@
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class Hotel {
 
     private int hotelID;
     private String location;
-    private LocalDate checkIn;
-    private LocalDate checkOut;
+    private LocalDateTime checkIn;
+    private LocalDateTime checkOut;
     private int price;
-    private int roomAvailable;
-    private int bookingNumber;
+    private int guestAvailable;
 
     public int getHotelID() {
         return hotelID;
@@ -26,19 +26,19 @@ public class Hotel {
         this.location = location;
     }
 
-    public LocalDate getCheckIn() {
+    public LocalDateTime getCheckIn() {
         return checkIn;
     }
 
-    public void setCheckIn(LocalDate checkIn) {
+    public void setCheckIn(LocalDateTime checkIn) {
         this.checkIn = checkIn;
     }
 
-    public LocalDate getCheckOut() {
+    public LocalDateTime getCheckOut() {
         return checkOut;
     }
 
-    public void setCheckOut(LocalDate checkOut) {
+    public void setCheckOut(LocalDateTime checkOut) {
         this.checkOut = checkOut;
     }
 
@@ -50,19 +50,11 @@ public class Hotel {
         this.price = price;
     }
 
-    public int getRoomAvailable() {
-        return roomAvailable;
+    public int getGuestAvailable() {
+        return guestAvailable;
     }
 
-    public void setRoomAvailable(int roomAvailable) {
-        this.roomAvailable = roomAvailable;
-    }
-
-    public int getBookingNumber() {
-        return bookingNumber;
-    }
-
-    public void setBookingNumber(int bookingNumber) {
-        this.bookingNumber = bookingNumber;
+    public void setGuestAvailable(int guestAvailable) {
+        this.guestAvailable = guestAvailable;
     }
 }
