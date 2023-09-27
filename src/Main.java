@@ -50,8 +50,8 @@ public class Main {
         app1.searchFlightAndHotel("888888888");
         app1.searchFlightAndHotel("513928144");
 
-        Long bookingNumber1 = app1.bookFlight(894125684 , 6);
-        Long bookingNumber2 = app1.bookHotel(452123758, 2);
+        long bookingNumber1 = app1.bookFlight(894125684 , 6);
+        long bookingNumber2 = app1.bookHotel(452123758, 2);
 
         app1.cancelReservation(bookingNumber1);
     }
